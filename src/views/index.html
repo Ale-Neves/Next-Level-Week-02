@@ -1,0 +1,71 @@
+<!-- Live Server é uma extensão que atualiza automaticamente o navegador apos vc alterar o seu arquivo html.-->
+<!--isso é uma tag html para colocar informações.-->
+
+    <!--HTML NÃO É UMA LINGUAGEM DE PROGRAMAÇÃO ! 
+        HTML É UMA LINGUAGEM DE MARCAÇÃO DE TEXTO. 
+        
+        HyperText = Hiper texto
+        Markup = Marcação
+        Language = Linguagem
+        -->    
+<!--Ctrl + B : fecha a janela do explorador 
+     Alt + Z ou Crtl + ; : Ajusta o documento conforme sua janela, ele da uma quebra falsa de linha
+    Ctrl + P : Abre o Painel do vs code.
+    Ctrl + P + ">shortcuts" : Abre o Painel de todos os atalhos do vs code.
+-->
+<!-- O CSS é responsavel por dar vida ao site deixar mais bonito as animações-->
+
+<!-- <p> P signigica paragrafo, colocamos blocos de texto aqui dentro-->
+<!-- <img src="" alt="Logo"> Utilizado para inserir imagens, dentro do Src a fonte da imagem ou origem dela e no alt um nome uma alternativa para esta imagem caso não encontre. -->
+<!-- H1 Esta fazendo um titulo forte " esta deixando em negrito e maior o texto. (H1 SÓ VAI ATÉ O NUMERO 6)"-->
+<!-- Atributos de class e atributo id são atributos globais  -->
+
+<!DOCTYPE html><!--faz com que os navegadores entendão a versão que eu estou utilizando o html-->
+<html lang="pt_br"><!-- lang é um atributo -->
+<head> <!-- Na tag head"cabeçalho" Devera vir as configurações do meu documento.-->
+    <meta charset="UTF-8"> <!--é uma configuração do documento como um todo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Configura o documento  para que consiga adaptar para telas maiores ou menores.-->
+    <meta name="theme-color" content="#8257E5">
+    
+    <title>Proffy | Sua Plataforma de estudos online </title><!--Titulo da Pagina-->
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png"> <!-- Colocando icone na batta no navegador.-->
+    
+    <link rel="stylesheet" href="/style/main.css"> <!-- Esse link ele vai puxar o css de um arquivo de fora.*/ -->
+     <link rel="stylesheet" href="style/partials/page-landing.css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+</head>
+<body id="page-landing"><!-- tod conteudo visivel  da pagina, devera vir dentro do body--> 
+    
+    <!-- criando uma caixa que não tem significado nenhum em html 'div' -->
+    <div id="container">
+        <div class="logo-container">
+             <img src="/images/logo.svg" alt="Proffy"> <!--introduzindo a logo  -->
+            <h2>Sua plataforma e estudos online</h2>
+        </div>
+
+             <img class="hero-image" src="/images/landing.svg" alt="Plataforma de Estudos"> <!-- add uma nova imagem -->
+
+        <!-- imagem dos botoes Estudar -->
+        <div class="buttons-container">
+            <a class="study" href="/study"> 
+               <img src="/images/icons/study.svg" alt="Estudar"> Estudar
+            </a>
+        
+        <!-- imagem dos botoes Dar aula -->
+        <div class="give-container">
+                <a class="give-classes" href="/give-classes"> 
+                   <img src="/images/icons/give-classes.svg" alt="Dar Aulas"> Dar aulas
+                </a>
+
+        </div>
+    </div>
+
+    <p class="total-connections">
+        Total de 200 conexões já realizadas
+        <img src="/images/icons/purple-heart.svg" alt="Coração roxo">
+    </p>
+</body>
+</html>

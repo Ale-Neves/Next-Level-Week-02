@@ -1,0 +1,94 @@
+/* ---------------- Cabeçalho da pagina sutdy --------------- */
+.page-header
+{
+    background-color: var(--color-primary);
+
+    display: flex;
+    flex-direction: column;
+}
+/* ---------------- Seta do cabeçalho --------------- */
+.page-header .top-bar-container
+{
+    width: 90%;
+
+    margin: 0 auto; /*colocando espaço automatico nas magens*/
+
+    display: flex;
+    align-items: center; /*alinhando ao centro */
+    justify-content: space-between; /*espaço entre eles*/
+
+    padding: 1.6rem 0;/*preencimento topo e embaixo do cabeçalho*/
+}
+/*coloacando um efeito de opacidade na seta.*/
+.page-header .top-bar-container a
+{
+    height: 3.2rem;
+    transition: opacity 0.2s;
+}
+
+.page-header .top-bar-container a:hover
+{
+    opacity: 0.6;
+}
+/* -------------------------------------------------- */
+
+/* ---------------- Logo do Proffy --------------- */
+.page-header .top-bar-container > img
+{
+    height: 1.6rem; /*alterando o tamanho da logo*/
+}
+
+/* ---------------- Caixa de opções proffy --------------- */
+.page-header .header-content
+{
+    width: 90%;
+    margin: 3.2rem auto; /*dando espaçamento e colocando margen*/
+
+    position: relative;
+}
+.page-header .header-content strong/*alterando o titulo*/
+{
+    font: 700 3.6rem Archivo;
+    line-height: 4.2rem; /*altera a altura da linha do texto*/
+    color: var(--color-title-in-primary);
+}
+
+.page-header .header-content p /*alterando texto do cabeçalho*/
+{
+    max-width: 30rem; /* largura do texto*/
+    font-size: 1.6rem; /*mudando tamanho da fonte*/
+    line-height: 2.6rem; /**/
+    color: var(--color-text-in-primary); /*colocando coloração na letra*/
+    margin-top: 2.4rem; /*para separar do topo*/
+}
+
+
+/* ------------------- Alterando para formato DeskTop ------------------------ */
+
+@media(min-width: 700px) /*quando a largura chegar a 1100 pixels ele faz esses comandos*/
+{
+    .page-header
+    {
+        height: 340px;
+    }
+
+    .page-header .top-bar-container{
+        max-width: 1100px;
+    }
+
+    .page-header .header-content{
+        max-width: 740px;
+
+        margin: 0 auto;
+        
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .page-header .header-content strong{
+        max-width: 350px;
+    }
+}

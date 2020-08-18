@@ -1,0 +1,237 @@
+#page-study #container  /* ajustando a altura e largura da pagina study*/
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+#search-teachers /*alterando o formulario*/
+{
+    margin-top: 3.2rem;/*dando um espaçamento no topo*/
+}
+#search-teachers label
+{
+    color: var(--color-text-in-primary);
+}
+#search-teachers .select-block
+{
+    margin-bottom: 1.4rem;/*aplicando separação nas caixas do bloco*/
+}
+
+#search-teachers button /*alterando as propriedades do botão filtrar*/
+{
+    width: 100%; /*alterando a largura*/
+    height:5.6rem; /*alterando a altura*/
+    background: var(--color-secondary); /*alterando a cor do botão para verde*/
+    color: var(--color-button-text);/*alterando a cor do texto do botão*/
+    border: 0; /*tando a borda*/
+    border-radius: 0.8rem; /*depois arredonda a borda*/
+    cursor: pointer; /*quando passo o mouse em cima da caixa ele transforma em uma mãozinha*/
+    font: 700 1.6rem Archivo; /*alterando a fonte*/
+    
+    display: flex; /*garante que o botão sempre estara alinhado ao meio da caixa*/
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    transition: background 0.2s;/* faz uma transição de cor*/
+    margin-top: 3.2rem; /*colocando uma margem no topo*/
+}
+
+#search-teachers button:hover
+{
+    background-color: var(--color-secondary-dark);/*alterando a cor da transição da caixa*/
+}
+
+/* ---------------- Logo do Proffy --------------- */
+.page-header .top-bar-container img
+{
+    height: 1.6rem; /*alterando o tamanho da logo*/
+}
+
+/* ------------------- Informações principais do study --------------- */
+#page-study main
+{   
+    margin: 3.2rem auto; /*colocando margem */
+    width: 90%; /*alterando tamanho*/
+}
+.teacher-item /*colocando um quadro branco*/
+{   
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.8rem; /*arredondando a borda*/
+    margin-top:2.4rem; /*dando espaço do top*/
+}
+.teacher-item header
+{
+    padding: 3.2rem 2rem;/*colocando borda em cima e embaixo*/
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item header img
+{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.teacher-item header div
+{
+    margin-left: 2.4rem; /* colocando espaço entre a imagem e texto*/
+}
+.teacher-item header div strong
+{
+    font: 700 2.4rem Archivo;
+    display: block;
+    color: var(--color-text-title);
+}
+.teacher-item header div span /*alterando espaçamento entre profissao e nome*/
+{
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 0.4rem;
+}
+.teacher-item > p /*alterando a configuração de texto*/
+{
+    padding: 0 2rem;
+    font-size: 1.6rem; 
+    line-height: 2.8rem;
+}
+.teacher-item footer /*colocando borda abaixo do texto do professor*/
+{
+    padding: 3.2rem 2rem;
+    background-color: var(--color-box-footer);
+    border-top:  1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.teacher-item footer p /*alterando parematro do preçio/hora*/
+{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-text-complement);
+}
+.teacher-item footer p strong /*alterando parematro do valor*/
+{  
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    display: block;
+}
+.teacher-item footer .button /*alterando as propriedades do botão filtrar*/
+{
+    width: 20rem; /*alterando a largura*/
+    height:5.6rem; /*alterando a altura*/
+    background: var(--color-secondary); /*alterando a cor do botão para verde*/
+    color: var(--color-button-text);/*alterando a cor do texto do botão*/
+    border: 0; /*tando a borda*/
+    border-radius: 0.8rem; /*depois arredonda a borda*/
+    cursor: pointer; /*quando passo o mouse em cima da caixa ele transforma em uma mãozinha*/
+    font: 700 1.4rem Archivo; /*alterando a fonte*/
+    
+    display: flex; /*garante que o botão sempre estara alinhado ao meio da caixa*/
+    align-items: center;
+    justify-content: space-evenly; /*ele da espaçamento contantes entre os elementos*/
+
+    text-decoration: none; /*tirando qualquer tipo de decoração que estiver no texto*/
+
+    transition: background 0.2s;/* faz uma transição de cor*/
+    margin-left: 1.6rem; /*colocando uma margem no topo*/
+}
+
+.teacher-item footer .button:hover
+{
+    background-color: var(--color-secondary-dark);/*alterando a cor da transição da caixa*/
+}
+
+#page-study main .no-results
+{
+    max-width: 30rem;
+    margin: 12rem auto;
+    text-align: center;
+}
+
+
+
+/* ------------------- Alterando para formato DeskTop ------------------------ */
+
+@media(min-width: 700px) /*quando a largura chegar a 1100 pixels ele faz esses comandos*/
+{
+    #page-study #container
+    {
+        max-width:100vw; /*ficar com essa lagura maxima quando começar*/
+    }
+    .page-header{
+        height: 340px;
+    }
+
+    .page-header .top-bar-container{
+        max-width: 1100px;
+    }
+
+    .page-header .header-content{
+        max-width: 740px;
+
+        margin: 0 auto;
+        
+        flex: 1 1;
+        padding-bottom: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .page-header .header-content strong{
+        max-width: 350px;
+    }
+
+    .teacher-item header,
+    .teacher-item footer
+    {
+        padding: 32px;
+    }
+
+    #search-teachers
+    {
+        display: grid; /* ele divide o seu layout em varias colunas*/
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px; /*da um espaçamento entre as colunas*/
+        position: absolute;
+        bottom: -28px;
+
+    }
+
+    #page-study main{
+        padding: 32px 0;
+        max-width: 740px;
+    }
+
+    #search-teachers .select-block{
+        margin: 0;
+    }
+
+    .teacher-item > p{
+        padding: 0 32px;
+    }
+
+    .teacher-item footer p strong{
+        display: initial;
+        margin-left: 16px;
+    }
+
+    .teacher-item footer button{
+        width: 245px;
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .teacher-item footer button img{
+        margin-right: 16px;
+    }
+
+}
+
+ 

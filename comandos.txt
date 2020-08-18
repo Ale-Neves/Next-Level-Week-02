@@ -1,0 +1,15 @@
+-cd /d/nlw  navega na pasta pelo prompt
+-pwd mosta a pasta que você esta
+-ctrl + l  limpa o terminal
+-node -v verifica se o node esta funcionando
+-npm -v  verifica a verção
+-npm init -y  inicia um novo projeto
+-npm install express faz servidores
+-ctrl + c  interrompe o terminal
+-node src/server.js executa o servidor
+-npm install nodemon -D  é um monitoramento do node
+-npm run dev  faz a execução do script
+-npm install nunjucks faz a instalação da template engine
+-npm install sqlite-async  fazendo a instalação 
+
+npm = é i gerenciador de pacotes do node

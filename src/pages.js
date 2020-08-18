@@ -4,7 +4,7 @@ const { subjects, weekdays, getSubject, convertHoursToMinutes } = require('./uti
 
 function pageLanding(req, res)
 {
-    return res.render("index.html") /* busca a rota dos arquivos index*/
+    return res.render("index.html") // busca a rota dos arquivos index
 }
 async function pageStudy(req, res){
     const filters = req.query // recebe os dados que o estudante envia 
